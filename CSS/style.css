@@ -1,0 +1,330 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* font-family: "Open Sans", sans-serif; */
+ 
+
+
+/*Paleta de colores
+#FFFFFF Blanco Puro
+#D4F0EE Teal suave
+#91C6BC turquesa claro
+#3AADA4 turquesa oscuro
+#F6F3C2 Amarillo claro
+#E37434 Naranja tostado
+#1A1A1A Negro Carbón
+*/
+
+/* Reset / arriba de todo */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Generales*/
+
+p {
+    color: #1A1A1A;
+}
+
+h1{
+    color:#3AADA4;
+    font-family: "Open Sans", sans-serif;
+    font-size: 150%;
+}
+
+
+/*Header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #D4F0EE;
+    position: sticky;
+    top: 0;
+} 
+
+header img{
+    width: 17%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav{
+    width: 45%;
+}
+
+.lista-header{
+    list-style: none;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: x-small;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none; 
+    color: #3AADA4;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 20px;
+}
+ 
+/*Main index*/
+
+.div-flex{
+    background-color: #D4F0EE;
+    /*border-radius: 50px 56px 50px 50px;
+    -webkit-border-radius: 50px 56px 50px 50px;
+    -moz-border-radius: 50px 56px 50px 50px;*/
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    color:#91C6BC;
+    text-align: center;
+    text-shadow: -1px 8px 40px rgba(145,198,188,0.7);
+    margin: 20px;
+}
+
+.sobre-nosotros{
+    margin-bottom: 20px;
+    color: #3AADA4;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+main{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.contenedor-grid img{
+    width: 90%;
+    height: 90%;
+}
+
+.contenedor-grid{
+    display:grid;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "div1 div2 div3"
+    "div1 div4 div5";
+
+    /* Cantidad y el ANCHO que va a tener cada una*/
+    grid-template-columns: 30% 25% 25%;
+
+    /* Cantidad y el ALTO de cada fila*/
+    grid-template-rows: 50px 150px 200px 150px;
+
+    /* Alinear la grilla como caja */
+    justify-content: center;
+
+    /* Alinear los hijos en sus áreas*/
+    justify-items: center;
+    align-items: center;
+
+    /* Espacios entre filas y columnas*/
+    column-gap: 50px;
+    row-gap: 5px;
+
+}
+
+.titulo-grid{
+    grid-area:titulo;
+    font-family: "Cedarville Cursive", cursive;
+    color: #3AADA4;
+    font-weight: 150;
+    font-style: italic;
+    
+}
+
+.div1{
+    grid-area: div1;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.div2{
+    grid-area: div2;
+    text-align: center;
+}
+
+.div3{
+    grid-area: div3;
+    text-align: center;
+}
+
+.div4{
+    grid-area: div4;
+    text-align: center;
+}
+
+.div5{
+    grid-area: div5;
+    text-align: center;
+}
+
+/*Box Model*/
+
+.box{
+    background-color: tomato;
+    font-size: 1.5rem;
+    border: blueviolet 8px solid;
+    padding: 20px;
+    margin: 20px 10px;
+
+}
+
+/*Flex Box*/
+
+
+
+/*Footer*/
+footer{
+    display:grid;
+    row-gap: 5px;
+    background-color: #E37434;
+    color: #FFFFFF;
+    font-size: x-small;
+    align-items: center;
+
+}
+
+.logo-fb{
+    width: 35px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.logo-ig{
+    width: 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+
+.logo-wp{
+    width: 50px;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+
+}
+
+/*Index*/
+
+
+/*Servicios*/
+
+.card{
+    border: solid #ccc;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #3AADA4;
+}
+
+.card__titulo, .card__descripcion{
+    color: #FFF;
+
+
+}
+
+.card__titulo{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card__boton{
+    background-color: #ccc4c4;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.card__boton:hover {
+    background-color: #b5b2b2;
+}
+/*Adopciones*/
+
+/*Sucursales*/
+
+/*Contacto*/
+
+/* Media Queries */
+
+/* Mobile */
+@media (max-width: 480px){
+    body {
+        h1{
+            font-size: 120%;
+        }
+        header{
+            flex-direction: column;
+            align-items: center;
+        };
+        header img{
+            width: 20%;
+            align-items: center;
+            justify-content: center;
+        }
+        nav{
+            width: 85%;
+        };
+        .lista-header{
+            margin-right: 6%;
+            margin-left: 6%;
+            column-gap: 5%;
+            row-gap: 5%;
+        };
+
+        /*Sucursales Grid*/
+        .contenedor-grid{
+            grid-template-areas:
+            "titulo"
+             "div1" 
+             "div2" 
+             "div3"
+             "div4" 
+             "div5";
+            grid-template-columns: 95%;
+            grid-template-rows: 70px 220px 125px 120px 120px 120px;            
+        }
+        .titulo-grid{
+            grid-area:titulo;
+            align-items: center;
+        }
+        .div1{
+            grid-area: div1;
+            border-radius: 25%;
+        }
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-color: #E37434;
+    }
+
+}
