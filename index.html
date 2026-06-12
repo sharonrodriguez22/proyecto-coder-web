@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es_AR">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,94 +17,159 @@
     <meta property="og:url" content="https://sociedadpatitas.org/">
     <meta property="og:locale" content="es_AR">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-
-        <a href="./index.html"><img class="logo img-fluid" src="./img/logo1.svg" alt="Logo de casa con un perrito adentro"></a>
-        
-        <nav>
-            <ul class="lista-header">
-                <li><a href="#">Home</a></li>
-                <li><a href="./page/servicios.html"> Servicios </a> </li>
-                <li><a href="./page/adopciones.html"> Adopciones </a> </li>
-                <li><a href="./page/sucursales.html"> Sucursales </a> </li>
-                <li><a href="./page/contacto.html"> Contacto </a> </li>
-
-            </ul>
-        </nav>
-
+    <header class="site-header">
+        <div class="wrap">
+            <div class="nav">
+                <a class="nav__logo" href="index.html" aria-label="Sociedad Patitas — Inicio">
+                    <img src="./img/logo.svg" alt="Logo Sociedad Patitas" width="52" height="52">
+                </a>
+                <nav class="nav__menu" aria-label="Navegación principal">
+                    <a href="#" aria-current="page">Home</a>
+                    <a href="./page/servicios.html">Servicios</a>
+                    <a href="./page/adopciones.html">Adopciones</a>
+                    <a href="./page/sucursales.html">Sucursales</a>
+                    <a href="./page/contacto.html">Contacto</a>
+                </nav>
+                <div class="nav__cta">
+                    <a class="btn btn--honey" href="pages/adopciones.html"><span>Quiero adoptar</span> 🐾</a>
+                    <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                    </button>
+                </div>
+            </div>
+            <!--<nav class="nav__mobile" id="mobile-nav" aria-label="Menú móvil">
+                <a href="#" aria-current="page">Home</a>
+                    <a href="./page/servicios.html">Servicios</a>
+                    <a href="./page/adopciones.html">Adopciones</a>
+                    <a href="./page/sucursales.html">Sucursales</a>
+                    <a href="./page/contacto.html">Contacto</a>
+            </nav>-->
+        </div>
     </header>
-    
-    
-    <main >
 
-        <section class="contenedor-grid">
-
-            <h1 class="titulo-grid">Cuidado Canino y Bienestar</h1>
-            <div class="div1 div-flex">
-                <h2 class="sobre-nosotros">Sobre Nosotros</h2>
-                <p>Somos una organización dedicada al rescate, cuidado y adopción responsable de perros 
-                    en situación de abandono. Trabajamos para brindarles una segunda oportunidad, 
-                    conectándolos con familias comprometidas y promoviendo el bienestar animal a través 
-                    del amor, la responsabilidad y la comunidad.
-                </p>
+    <main>
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="wrap">
+                <div class="hero__grid">
+                    <div class="hero__copy">
+                        <span class="eyebrow">🐾 Buenos Aires, Argentina</span>
+                        <h1 id="hero-title">Cada perro merece un hogar con <span class="accent">amor</span></h1>
+                        <p class="lead">Rescatamos, rehabilitamos y conectamos perros abandonados con familias responsables.</p>
+                        <div class="hero__actions">
+                            <a class="btn btn--primary" href="pages/adopciones.html">Ver perros en adopción</a>
+                            <a class="btn btn--ghost" href="pages/contacto.html">Ser voluntario</a>
+                        </div>
+                        <div class="stats">
+                            <div><div class="stats__num">+800</div><div class="stats__label">Rescatados</div></div>
+                            <div><div class="stats__num">+620</div><div class="stats__label">Adoptados</div></div>
+                            <div><div class="stats__num">3</div><div class="stats__label">Sedes</div></div>
+                        </div>
+                    </div>
+                    <div class="hero__art" aria-hidden="true">
+                        <div class="hero__blob"></div>
+                        <svg class="hero__dog" viewBox="0 0 320 300" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="160" cy="265" rx="92" ry="16" fill="#1B7468" opacity=".18"/>
+                            <path d="M92 120c-26-6-40 18-30 40 6 13 22 16 34 12" fill="#FBF8F1"/>
+                            <path d="M228 120c26-6 40 18 30 40-6 13-22 16-34 12" fill="#FBF8F1"/>
+                            <ellipse cx="160" cy="170" rx="86" ry="84" fill="#FBF8F1"/>
+                            <path d="M95 95c-14-22-8-44 8-44s24 24 16 44Z" fill="#F4EEE2"/>
+                            <path d="M225 95c14-22 8-44-8-44s-24 24-16 44Z" fill="#F4EEE2"/>
+                            <ellipse cx="160" cy="190" rx="52" ry="44" fill="#fff"/>
+                            <circle cx="132" cy="158" r="9" fill="#2B2724"/>
+                            <circle cx="188" cy="158" r="9" fill="#2B2724"/>
+                            <circle cx="135" cy="155" r="3" fill="#fff"/>
+                            <circle cx="191" cy="155" r="3" fill="#fff"/>
+                            <ellipse cx="160" cy="188" rx="13" ry="9" fill="#2B2724"/>
+                            <path d="M160 197v14c0 9-10 9-14 4M160 211c0 9 10 9 14 4" fill="none" stroke="#2B2724" stroke-width="4" stroke-linecap="round"/>
+                            <circle cx="112" cy="186" r="11" fill="#FF8A6B" opacity=".5"/>
+                            <circle cx="208" cy="186" r="11" fill="#FF8A6B" opacity=".5"/>
+                        </svg>
+                        <svg class="paw paw--1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6" cy="9" r="2.4"/><circle cx="12" cy="6.5" r="2.4"/><circle cx="18" cy="9" r="2.4"/><circle cx="9" cy="13.5" r="2.4"/><circle cx="15" cy="13.5" r="2.4"/><path d="M12 13c4 0 7 2.4 7 5.4S15.5 22 12 22s-7-.6-7-3.6S8 13 12 13Z"/></svg>
+                        <svg class="paw paw--2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6" cy="9" r="2.4"/><circle cx="12" cy="6.5" r="2.4"/><circle cx="18" cy="9" r="2.4"/><circle cx="9" cy="13.5" r="2.4"/><circle cx="15" cy="13.5" r="2.4"/><path d="M12 13c4 0 7 2.4 7 5.4S15.5 22 12 22s-7-.6-7-3.6S8 13 12 13Z"/></svg>
+                        <svg class="paw paw--3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="6" cy="9" r="2.4"/><circle cx="12" cy="6.5" r="2.4"/><circle cx="18" cy="9" r="2.4"/><circle cx="9" cy="13.5" r="2.4"/><circle cx="15" cy="13.5" r="2.4"/><path d="M12 13c4 0 7 2.4 7 5.4S15.5 22 12 22s-7-.6-7-3.6S8 13 12 13Z"/></svg>
+                    </div>
+                </div>
             </div>
-
-            <div class="div2">
-                <h3>🐶 Rescate</h3>
-                <p>
-                    Rescatamos perros en situación de abandono y les brindamos cuidado, atención y una 
-                    nueva oportunidad de vida.
-                </p>
-            </div>
-            
-            <div class="div3">
-                <h3>❤️ Adopción Responsable</h3>
-                <p>
-                    Acompañamos a cada familia durante el proceso de adopción para fomentar vínculos 
-                    sanos y duraderos.
-                </p>
-            </div>
-
-            <div class="div4">
-                <h3>🛍️ Petshop Solidario</h3>
-                <p>
-                    Ofrecemos productos para mascotas y cada compra ayuda a financiar rescates, 
-                    tratamientos y hogares de tránsito.
-                </p>
-            </div>
-
-            <div class="div5">
-                <h3>🤝 Comunidad</h3>
-                <p>
-                    Somos una red de voluntarios, adoptantes y donantes comprometidos con 
-                    el bienestar animal.
-                </p>
-            </div>
-        </section>        
-
-    </main>
-
-
-
-    <footer>
-        <p>Seguinos en nuestras redes</p>
-        <section class="redes-sociales">
-            <img class="logo-fb" src="./img/logo-fb.svg" alt="logo facebook">
-            <img class="logo-ig" src="./img/logo-ig.svg" alt="logo instagram">
         </section>
-        
-        <img class="logo-wp" src="./img/logo-wp.svg" alt="logo whatsapp">
+
+        <!-- SOBRE NOSOTROS -->
+        <section class="about wrap" aria-labelledby="about-title">
+            <div class="about__card">
+                <div class="about__badge" aria-hidden="true">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                        <path d="M12 21s-7-4.5-9.5-9C.8 8.4 2.5 4.8 6 4.8c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.5 0 5.2 3.6 3.5 7.2C19 16.5 12 21 12 21Z" fill="currentColor" opacity=".18"/>
+                        <path d="M12 21s-7-4.5-9.5-9C.8 8.4 2.5 4.8 6 4.8c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.5 0 5.2 3.6 3.5 7.2C19 16.5 12 21 12 21Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="eyebrow">Quiénes somos</span>
+                    <h2 id="about-title">Una comunidad que cuida a quienes no tienen voz</h2>
+                    <p>Somos una ONG sin fines de lucro fundada en 2015. Con voluntarios, veterinarios y familias de tránsito garantizamos que cada perro reciba el cuidado que necesita hasta encontrar su hogar.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>    
+    
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="site-footer__grid">
+                <div class="site-footer__brand">
+                    <img src="img/logo.svg" alt="Logo Sociedad Patitas">
+                    <p>Rescate, cuidado y adopción responsable de perros en situación de abandono en Buenos Aires.</p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><img src="img/fb.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><img src="img/ig.svg" alt="Instagram"></a>
+                        <a href="tel:+541155555555" aria-label="Llamanos"><img src="img/phone.svg" alt="Teléfono"></a>
+                    </div>
+                </div>
+                <nav aria-label="Navegación pie de página">
+                    <h4>Páginas</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/servicios.html">Servicios</a></li>
+                        <li><a href="pages/adopciones.html">Adopciones</a></li>
+                        <li><a href="pages/sucursales.html">Sucursales</a></li>
+                        <li><a href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:hola@sociedadpatitas.org">hola@sociedadpatitas.org</a></li>
+                        <li><a href="tel:+541155555555">+54 11 5555 5555</a></li>
+                        <li>Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="site-footer__bottom">© 2026 Sociedad Patitas · Hecho con 💛 por y para los perros</p>
+        </div>
     </footer>
-        
-    <!-- JS de BS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <a class="wsp-float" href="https://wa.me/541155555555" aria-label="Escribinos por WhatsApp" target="_blank" rel="noopener">
+        <img src="img/wsp-white.svg" alt="" aria-hidden="true">
+    </a>
+
+    <script>
+        // Burger menu
+        const burger = document.querySelector('.nav__burger');
+        const mobileNav = document.getElementById('mobile-nav');
+        burger.addEventListener('click', () => {
+        const open = mobileNav.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open);
+        });
+        // Fade-up scroll
+        const obs = new IntersectionObserver(els => els.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }), { threshold:.15 });
+        document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+    </script> 
     
 </body>
 </html>
