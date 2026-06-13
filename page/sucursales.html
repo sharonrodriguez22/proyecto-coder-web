@@ -8,7 +8,7 @@
     <meta name="author" content="Sociedad Patitas">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#229386">
-    <link rel="canonical" href="https://sociedadpatitas.org/pages/sucursales.html">
+    <link rel="canonical" href="https://sociedadpatitas.org/page/sucursales.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sucursales | Sociedad Patitas">
     <meta property="og:description" content="Sedes en Palermo, Tigre y La Plata. Horarios y cómo llegar.">
@@ -36,42 +36,130 @@
                     <a href="../page/contacto.html">Contacto</a>
                 </nav>
                 <div class="nav__cta">
-                    <a class="btn btn--honey" href="pages/adopciones.html"><span>Quiero adoptar</span> 🐾</a>
+                    <a class="btn btn--honey" href="./adopciones.html"><span>Quiero adoptar</span> 🐾</a>
                     <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
                     </button>
                 </div>
             </div>
-            <!--<nav class="nav__mobile" id="mobile-nav" aria-label="Menú móvil">
+            <nav class="nav__mobile" id="mobile-nav" aria-label="Menú móvil">
                 <a href="../index.html" aria-current="page">Home</a>
                 <a href="../page/servicios.html">Servicios</a>
                 <a href="../page/adopciones.html">Adopciones</a>
                 <a href="#">Sucursales</a>
                 <a href="../page/contacto.html">Contacto</a>
-            </nav>-->
+            </nav>
         </div>
     </header>
-
-    <h1 class="titulo-grid">Sucursales</h1>
-
-    <section>
-        <h3>Veterinaria VQ</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.038354466303!2d-58.42683722565558!3d-34.57789605613254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59b9ca687bd%3A0xa5f7637ad8205c64!2sV%20Q%20Pet%20Shop!5e0!3m2!1ses-419!2sar!4v1775331194750!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    
     <main>
+
+        <section class="page-hero wrap">
+            <span class="eyebrow">Dónde estamos</span>
+            <h1>Visitanos en nuestras sedes</h1>
+            <p class="lead">Acercate a conocer los perros, comprar en el petshop o sumarte como voluntario.</p>
+        </section>
+
+        <section class="branches wrap" aria-label="Listado de sucursales">
+            <div class="branch-grid">
+                <article class="branch fade-up">
+                    <iframe class="branch__map"
+                        src="https://www.google.com/maps?q=Av.+Santa+Fe+3200+Palermo+Buenos+Aires&output=embed"
+                        loading="lazy" title="Mapa sede Palermo"
+                        aria-label="Mapa interactivo de la sede Palermo"></iframe>
+                    <div class="branch__body">
+                        <h3>Sede Palermo</h3>
+                        <ul class="branch__data">
+                            <li><img src="../img/logo.svg" alt="" aria-hidden="true"> Av. Santa Fe 3200, CABA</li>
+                            <li><img src="../img/phone.svg" alt="Teléfono"> <a href="tel:541155551001">+54 11 5555 1001</a></li>
+                            <li>🕒 Lun a Sáb · 10 a 18 h</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="branch fade-up">
+                    <iframe class="branch__map"
+                        src="https://www.google.com/maps?q=Av.+Cazon+1450+Tigre+Buenos+Aires&output=embed"
+                        loading="lazy" title="Mapa sede Tigre"
+                        aria-label="Mapa interactivo de la sede Tigre"></iframe>
+                    <div class="branch__body">
+                        <h3>Sede Tigre</h3>
+                        <ul class="branch__data">
+                            <li><img src="../img/logo.svg" alt="" aria-hidden="true"> Av. Cazón 1450, Tigre</li>
+                            <li><img src="../img/phone.svg" alt="Teléfono"> <a href="tel:541155551002">+54 11 5555 1002</a></li>
+                            <li>🕒 Mar a Dom · 11 a 19 h</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="branch fade-up">
+                    <iframe class="branch__map"
+                        src="https://www.google.com/maps?q=Calle+7+880+La+Plata+Buenos+Aires&output=embed"
+                        loading="lazy" title="Mapa sede La Plata"
+                        aria-label="Mapa interactivo de la sede La Plata"></iframe>
+                    <div class="branch__body">
+                        <h3>Sede La Plata</h3>
+                        <ul class="branch__data">
+                            <li><img src="../img/logo.svg" alt="" aria-hidden="true"> Calle 7 Nº 880, La Plata</li>
+                            <li><img src="../img/phone.svg" alt="Teléfono"> <a href="tel:542215551003">+54 221 555 1003</a></li>
+                            <li>🕒 Lun a Vie · 9 a 17 h</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
 
     </main>
 
 
-    <footer>
-      <p>Seguinos en nuestras redes</p>
-      <img class="logo-fb" src="../img/logo-fb.svg" alt="logo facebook">
-      <img class="logo-ig" src="../img/logo-ig.svg" alt="logo instagram">
-      <img class="logo-wp" src="../img/logo-wp.svg" alt="logo whatsapp">
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="site-footer__grid">
+                <div class="site-footer__brand">
+                    <img src="../img/logo.svg" alt="Logo Sociedad Patitas">
+                    <p>Rescate, cuidado y adopción responsable de perros en situación de abandono.</p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><img src="../img/fb.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><img src="../img/ig.svg" alt="Instagram"></a>
+                        <a href="tel:+541155555555" aria-label="Llamanos"><img src="../img/phone.svg" alt="Teléfono"></a>
+                    </div>
+                </div>
+                <nav aria-label="Pie de página">
+                    <h4>Páginas</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./adopciones.html">Adopciones</a></li>
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:hola@sociedadpatitas.org">hola@sociedadpatitas.org</a></li>
+                        <li><a href="tel:+541155555555">+54 11 5555 5555</a></li>
+                        <li>Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="site-footer__bottom">© 2026 Sociedad Patitas · Hecho con 💛 por y para los perros</p>
+        </div>
     </footer>
     
-    <!-- JS de BS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <a class="wsp-float" href="https://wa.me/541155555555" aria-label="Escribinos por WhatsApp" target="_blank" rel="noopener">
+        <img src="../img/wsp-white.svg" alt="" aria-hidden="true">
+    </a>
+
+    <script>
+        const burger = document.querySelector('.nav__burger');
+        const mobileNav = document.getElementById('mobile-nav');
+        burger.addEventListener('click', () => {
+        const open = mobileNav.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open);
+        });
+        const obs = new IntersectionObserver(els => els.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }), { threshold:.15 });
+        document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+    </script>
+
     
 </body>
 </html>
